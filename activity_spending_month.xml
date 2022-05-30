@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="view.SpendingMonthActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/month"
+        android:id="@+id/textView31"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <Spinner
+        android:id="@+id/spnMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/edtTotal"
+        android:layout_alignBottom="@+id/textView31"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView31"
+        android:background="#ffe" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/total_spending"
+        android:id="@+id/textView32"
+        android:layout_alignBottom="@+id/edtTotal"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/edtTotal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor,RelativeOverlap" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_below="@+id/textView31"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="26dp">
+
+        <TableLayout
+            android:id="@+id/tableSpending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            tools:ignore="ObsoleteLayoutParam">
+
+            <TableRow
+                android:id="@+id/tableRow"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_above="@+id/textView32"
+                android:layout_below="@+id/spnMonth"
+                android:layout_alignParentStart="true"
+                android:background="#49F59C"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/spending"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/date"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/category"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

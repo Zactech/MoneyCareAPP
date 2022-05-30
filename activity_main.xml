@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="view.MainActivity"
+    android:background="#ffeb3b"
+    android:id="@+id/a"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/btnSpending"
+                    android:background="@mipmap/spending"
+                    android:contentDescription="@string/spending" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spending"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/btnBalance"
+                    android:background="@mipmap/balance"
+                    android:contentDescription="@string/balance" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/balance"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/btnSpendingCategory"
+                    android:background="@mipmap/category"
+                    android:contentDescription="@string/category" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/btnSpendingMonth"
+                    android:background="@mipmap/spending_month"
+                    android:contentDescription="@string/spending_month" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spending_month"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/btnSpendingYear"
+                    android:background="@mipmap/period"
+                    android:contentDescription="@string/spending_year" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spending_year"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                 android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/btnAccount"
+                    android:background="@mipmap/account_bank"
+                    android:contentDescription="@string/bank_account" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bank_account"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/btnCard"
+                    android:background="@mipmap/card"
+                    android:contentDescription="@string/card" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/btnDelete"
+                    android:background="@mipmap/delete2"
+                    android:contentDescription="@string/delete_account" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete_account"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/btnConfiguration"
+                    android:background="@mipmap/configuration"
+                    android:contentDescription="@string/setting" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
